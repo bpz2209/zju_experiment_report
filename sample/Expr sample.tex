@@ -1,0 +1,121 @@
+\documentclass[UTF8,AutoFakeBold]{article}%支持粗体
+\usepackage{ctex}
+\usepackage{soul}
+\usepackage{color}
+\usepackage{geometry}   % 页边距调整
+\usepackage{setspace}   % 行距调整
+\usepackage{graphicx}   % 图片支持
+\usepackage{float}      % 图片强制放置
+\usepackage{xcolor}     % 代码着色
+\usepackage{listings}   % 代码支持
+\usepackage{indentfirst}% 首行缩进
+\usepackage{titlesec}   % 设置标题
+\usepackage{zhnumber}   % 设置中文section序号
+\usepackage{amsmath,amssymb}    % 数学公式
+\usepackage{enumerate, enumitem}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{float}
+
+
+% 页边距调整
+\geometry{
+	a4paper,
+	left=2.54cm,
+	right=1.5cm,
+	top=1cm,
+	bottom=2.54cm
+}
+% 设置section和subsection
+\renewcommand{\thesection}{\zhnum{section}}
+\titleformat*{\section}{\bfseries\songti}
+\titleformat*{\subsection}{\large\bfseries\songti}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+% 行距调整
+\linespread{1.15}
+% 首行缩进
+\setlength{\parindent}{2em}
+% 代码块命令
+\lstset{
+language=Matlab,  %代码语言使用的是matlab
+rulesepcolor=\color{black!90},%代码块边框为淡青色
+keywordstyle=\color{blue!90}\bfseries, %代码关键字的颜色为蓝色，粗体
+numbers=left, % 显示行号
+numberstyle=\tiny,    % 行号字体
+commentstyle=\color{green!90!blue!90!red!90},    % 设置代码注释的颜色
+showstringspaces=false,%不显示代码字符串中间的空格标记
+stringstyle=\ttfamily, % 代码字符串的特殊格式
+breaklines=true, %对过长的代码自动换行
+extendedchars=false,  %解决代码跨页时，章节标题，页眉等汉字不显示的问题
+,      % 代码中出现中文必须加上，否则报错
+texcl=true,}
+
+\begin{document}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=4.3cm]{./logo.png}
+    \textbf{\Huge\heiti 实验报告}
+    \qquad\qquad
+    \parbox[b]{4cm}{
+        专业：\underline{\hbox to 0.75\linewidth{\hfill 自动化（电气）\hfill}}\\
+
+        \vspace{-1.5ex}
+        姓名：\underline{\hbox to 0.75\linewidth{\hfill 林华鹏 \hfill}}\\
+
+        \vspace{-1.5ex}
+        学号：\underline{\hbox to 0.75\linewidth{\hfill 3190102323 \hfill}}\\
+
+        \vspace{-1.5ex}
+        日期：\underline{\hbox to 0.75\linewidth{\hfill  \hfill}}\\
+    }
+\end{figure}
+\vspace{6ex}
+\parbox{0.8\linewidth}{
+    \setlength{\baselineskip}{17pt}
+    课程名称：\underline{\hbox to 0.22\linewidth{\hfill \hfill}}
+    指导老师：\underline{\hbox to 0.10\linewidth{\hfill\hfill}}
+    实验类型：\underline{\hbox to 0.22\linewidth{\hfill \hfill}}\\
+    实验名称：\underline{\hbox to 0.25\linewidth{\hfill \hfill}}
+    成绩：\underline{\hbox to 0.15\linewidth{\hfill \hfill}}
+    签名：\underline{\hbox to 0.15\linewidth{\hfill \hfill}}
+}
+\vspace*{6ex}
+\section{实验目的}
+\begin{enumerate}
+    \item 
+    \item 
+\end{enumerate}
+
+
+\section{实验设备}
+\begin{enumerate}
+    \item
+\end{enumerate}
+
+\section{实验原理}
+\begin{itemize}
+    \item 
+\end{itemize}
+\section{预习要求(选做)}
+    
+
+\section{实验内容}
+\begin{enumerate}
+    \item 实验操作方法和步骤: 
+    \item 实验数据记录和处理:
+
+\end{enumerate}
+
+
+
+\section{实验总结}
+\begin{enumerate}
+    \item {实验结果与分析}\begin{enumerate}
+        \item 
+    \end{enumerate}
+    \item $\textbf{讨论、心得}$
+    \begin{flushleft}
+
+    \end{flushleft}   
+\end{enumerate}
+\end{document}
